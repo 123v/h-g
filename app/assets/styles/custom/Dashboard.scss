@@ -1,0 +1,215 @@
+@import "../base";
+
+.header{
+    // height: 100px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    background-color: $PRIMARY_COLOR;
+    border-bottom: 2px $DARK_COLOR solid;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        .icons{
+            display: flex;
+            img{
+                width: 150px;
+            }
+
+            .anticon{
+                font-size: 20px;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+        }
+    }
+    .title{
+        display: flex;
+        p{
+            margin-right: 20px;
+        }
+    }
+    .ant-btn-ghost{
+        padding: 0 15%;
+    }
+    .filter-option{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+
+        .ant-btn{
+            margin:0 5px;
+        }
+    }
+}
+
+.site-card-wrapper{
+    margin: 5px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+    .ant-row{
+        margin: 0px !important;
+    }
+    .ant-col{
+        margin: 5px 0 !important;
+    }
+    .ant-card-body{
+        padding: 10px !important;
+        div:first-child{
+          display: flex;
+          flex-direction: row-reverse;  
+        }
+        div:last-child{
+          display: flex;
+          flex-direction: row;  
+        }
+    }
+    .ant-pagination{
+        font-size: 12px;
+        margin: 10px auto;
+        li{
+            align-items: center;
+            width: 28px !important;
+            max-width: 28px !important;
+            height: 28px !important;
+            max-height: 28px !important;
+            margin-right: 4px !important;
+        }
+    }
+    img{
+        height: 125px;
+        width: auto;
+    }
+    .product-name{
+        text-align: left;
+        height: 60px;
+        font-size: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        white-space: normal;
+        overflow: hidden;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .product-price{
+        color: $DELETE_COLOR;
+    }
+    .product-price-original{
+        text-decoration: line-through;
+    }
+}
+
+.sort-option-div{
+    background-color: $DARK_COLOR;
+    bottom: 0;
+    position: sticky;
+    z-index: 100;
+    color: $PRIMARY_COLOR;
+    ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        li{
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.filter-option-div{
+    z-index: 1000;
+    height: 100vh;
+    top: 0;
+    position: sticky;
+    .filter-sub-option-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+
+.ant-tabs-nav{
+    width: 30%;
+}
+.ant-tabs-tabpane{
+    padding: 10px 10px !important;
+}
+
+.custom_checkbox{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+
+    .ant-checkbox{
+        .ant-checkbox-inner{
+            border-radius: 50% !important;
+        }
+    }
+    .ant-checkbox-checked .ant-checkbox-inner{
+        background-color: $ORANGE_COLOR !important;
+        border-color: $ORANGE_COLOR !important;
+    }
+}
+
+.filter-sub-radio-container{
+    .ant-radio-group{
+        display: flex;
+        flex-direction: column;
+
+        .ant-radio-wrapper{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            .ant-radio-checked .ant-radio-inner{
+             color: $ORANGE_COLOR !important;  
+             border-color: $ORANGE_COLOR !important; 
+            }
+
+            .ant-radio-inner::after{
+                background-color: $ORANGE_COLOR !important;
+            }
+        }
+    }
+}
+
+.checkedbutton{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.filter-header{
+    position: sticky;
+    top: 0 ;
+    z-index: 1;
+    background-color: $PRIMARY_COLOR;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}

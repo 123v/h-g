@@ -1,0 +1,14 @@
+@import "./_vars";
+@import "~antd/dist/antd.css";
+// @import "~bootstrap/scss/bootstrap";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $PRIMARY;
+}
+
+.root{
+  display: flex;
+  flex-direction: column;
+}
